@@ -133,6 +133,28 @@ entries:
     urls:
     - https://github.com/prometheus-community/helm-charts/releases/download/alertmanager-0.1.0/alertmanager-0.1.0.tgz
     version: 0.1.0
+  jiralert:
+  - apiVersion: v2
+    appVersion: v1.3.0
+    created: "2023-11-09T22:59:32.925826901Z"
+    description: A Helm chart for Kubernetes to install jiralert
+    digest: 527b43b3e2c73a2bca5d8c09e14777a9e9101ec223e1c789fbd520294cb7cd66
+    home: https://github.com/prometheus-community/jiralert
+    keywords:
+    - monitoring
+    - prometheus
+    - alerting
+    - jiralert
+    maintainers:
+    - email: github@jkroepke.de
+      name: jkroepke
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    name: jiralert
+    type: application
+    urls:
+    - https://github.com/allanhung/prometheus-community-helm-charts/releases/download/jiralert-1.6.1/jiralert-1.6.1.tgz
+    version: 1.6.1
   kube-prometheus-stack:
   - annotations:
       artifacthub.io/license: Apache-2.0
@@ -4764,6 +4786,36 @@ entries:
     - https://github.com/prometheus-community/helm-charts/releases/download/kube-prometheus-stack-9.3.4/kube-prometheus-stack-9.3.4.tgz
     version: 9.3.4
   kube-state-metrics:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+    apiVersion: v2
+    appVersion: 2.10.0
+    created: "2023-11-09T22:59:33.083415614Z"
+    description: Install kube-state-metrics to generate and expose cluster-level metrics
+    digest: e9429650ed0600ec95c392cad9038d7303999d1740df857648599388b9f0afba
+    home: https://github.com/kubernetes/kube-state-metrics/
+    keywords:
+    - metric
+    - monitoring
+    - prometheus
+    - kubernetes
+    maintainers:
+    - email: tariq.ibrahim@mulesoft.com
+      name: tariq1890
+    - email: manuel@rueg.eu
+      name: mrueg
+    - email: david@0xdc.me
+      name: dotdc
+    name: kube-state-metrics
+    sources:
+    - https://github.com/kubernetes/kube-state-metrics/
+    type: application
+    urls:
+    - https://github.com/allanhung/prometheus-community-helm-charts/releases/download/kube-state-metrics-5.15.1/kube-state-metrics-5.15.1.tgz
+    version: 5.15.1
   - annotations:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -10947,6 +10999,30 @@ entries:
     - https://prometheus-community.github.io/helm-charts/prometheus-1.3.1.tgz
     version: 1.3.1
   prometheus-adapter:
+  - apiVersion: v1
+    appVersion: v0.11.1
+    created: "2023-11-09T22:59:33.209731589Z"
+    description: A Helm chart for k8s prometheus adapter
+    digest: 9ec76b61bb53e6f3f74234d88222b5fa993af1f88fedbea9bee6ca4610b82296
+    home: https://github.com/kubernetes-sigs/prometheus-adapter
+    keywords:
+    - hpa
+    - metrics
+    - prometheus
+    - adapter
+    maintainers:
+    - email: mattias.gees@jetstack.io
+      name: mattiasgees
+    - name: steven-sheehy
+    - email: hfernandez@mesosphere.com
+      name: hectorj2f
+    name: prometheus-adapter
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/kubernetes-sigs/prometheus-adapter
+    urls:
+    - https://github.com/allanhung/prometheus-community-helm-charts/releases/download/prometheus-adapter-4.8.1/prometheus-adapter-4.8.1.tgz
+    version: 4.8.1
   - apiVersion: v1
     appVersion: v0.11.1
     created: "2023-10-20T05:45:43.887382041Z"
@@ -26775,6 +26851,30 @@ entries:
     - https://prometheus-community.github.io/helm-charts/prometheus-operator-0.1.0.tgz
     version: 0.1.0
   prometheus-postgres-exporter:
+  - apiVersion: v2
+    appVersion: v0.15.0
+    created: "2023-11-09T22:59:33.333312017Z"
+    description: A Helm chart for prometheus postgres-exporter
+    digest: 7e0b598f1029c1bdcdfd59b19fa9ce301e8572c425557066ccbfa11fdeff12ab
+    home: https://github.com/prometheus-community/postgres_exporter
+    keywords:
+    - postgresql
+    - prometheus
+    - exporter
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rootsandtrees@posteo.de
+      name: zeritti
+    name: prometheus-postgres-exporter
+    sources:
+    - https://github.com/prometheus-community/postgres_exporter
+    type: application
+    urls:
+    - https://github.com/allanhung/prometheus-community-helm-charts/releases/download/prometheus-postgres-exporter-5.2.0/prometheus-postgres-exporter-5.2.0.tgz
+    version: 5.2.0
   - apiVersion: v1
     appVersion: 0.8.0
     created: "2020-12-22T10:39:26.638696536Z"
@@ -29273,4 +29373,4 @@ entries:
     urls:
     - https://prometheus-community.github.io/helm-charts/prometheus-to-sd-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-06T16:20:34.646217788Z"
+generated: "2023-11-09T22:59:33.33755959Z"
