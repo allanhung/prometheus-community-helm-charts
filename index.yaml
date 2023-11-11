@@ -14545,6 +14545,25 @@ entries:
   prometheus-memcached-exporter:
   - apiVersion: v2
     appVersion: v0.13.0
+    created: "2023-11-11T17:14:50.562958663Z"
+    description: Prometheus exporter for Memcached metrics
+    digest: 0f889373e443e007fc3b1e077bf0e29e4f4aac25b4a242ee99cc0d0ac33c77a8
+    home: https://github.com/prometheus/memcached_exporter
+    keywords:
+    - prometheus
+    - memcached
+    maintainers:
+    - email: roger.sicart@gmail.com
+      name: rsicart
+    name: prometheus-memcached-exporter
+    sources:
+    - https://github.com/prometheus/memcached_exporter
+    type: application
+    urls:
+    - https://github.com/allanhung/prometheus-community-helm-charts/releases/download/prometheus-memcached-exporter-0.2.0/prometheus-memcached-exporter-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: v0.13.0
     created: "2023-10-20T05:45:44.362930601Z"
     description: Prometheus exporter for Memcached metrics
     digest: fd853cb7edfa37707bf8d644bd44c093862e81a11931c9d0225fee2e5c0aa2b6
@@ -26850,6 +26869,80 @@ entries:
     urls:
     - https://prometheus-community.github.io/helm-charts/prometheus-operator-0.1.0.tgz
     version: 0.1.0
+  prometheus-operator-admission-webhook:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/prometheus-operator
+    apiVersion: v2
+    appVersion: 0.69.1
+    created: "2023-11-11T17:14:50.704086526Z"
+    description: Prometheus Operator Admission Webhook
+    digest: 1130aa7f96e587be775cbdf4c477411a9039b2a478d7a7d700c4ddef14a92e35
+    home: https://github.com/prometheus-operator/prometheus-operator
+    icon: https://github.com/prometheus-operator/prometheus-operator/raw/main/Documentation/logos/prometheus-operator-logo.png
+    keywords:
+    - admission
+    - monitoring
+    - prometheus-operator
+    - webhook
+    maintainers:
+    - email: rootsandtrees@posteo.de
+      name: zeritti
+    name: prometheus-operator-admission-webhook
+    sources:
+    - https://github.com/prometheus-operator/prometheus-operator
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-operator-admission-webhook
+    type: application
+    urls:
+    - https://github.com/allanhung/prometheus-community-helm-charts/releases/download/prometheus-operator-admission-webhook-0.8.0/prometheus-operator-admission-webhook-0.8.0.tgz
+    version: 0.8.0
+  prometheus-operator-crds:
+  - annotations:
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+      artifacthub.io/maintainers: |
+        - name: dacamposol
+          email: dacamposol@gmail.com
+        - name: desaintmartin
+          email: cedric@desaintmartin.fr
+        - name: QuentinBisson
+          email: quentin.bisson@gmail.com
+    apiVersion: v2
+    appVersion: v0.69.1
+    created: "2023-11-11T17:14:50.850945093Z"
+    dependencies:
+    - name: crds
+      repository: ""
+      version: 0.0.0
+    description: 'A Helm chart that collects custom resource definitions (CRDs) from
+      the Prometheus Operator, allowing for seamless integration with GitOps tools '
+    digest: fcab7e5d9b72adeb3540ee26db79fc2767c504e736ffccfc586e21634b95097a
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - prometheus
+    - crds
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dacamposol@gmail.com
+      name: dacamposol
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: quentin.bisson@gmail.com
+      name: QuentinBisson
+    - email: github@jkroepke.de
+      name: jkroepke
+    name: prometheus-operator-crds
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    type: application
+    urls:
+    - https://github.com/allanhung/prometheus-community-helm-charts/releases/download/prometheus-operator-crds-7.0.0/prometheus-operator-crds-7.0.0.tgz
+    version: 7.0.0
   prometheus-postgres-exporter:
   - apiVersion: v2
     appVersion: v0.15.0
@@ -27400,6 +27493,34 @@ entries:
     - https://prometheus-community.github.io/helm-charts/prometheus-postgres-exporter-0.1.0.tgz
     version: 0.1.0
   prometheus-pushgateway:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+    apiVersion: v2
+    appVersion: v1.6.2
+    created: "2023-11-11T17:14:50.972428106Z"
+    description: A Helm chart for prometheus pushgateway
+    digest: b94d1b2e96e2aff43a3cf77f24e8808e006fd830d4a24ac28765a105e4b5e47d
+    home: https://github.com/prometheus/pushgateway
+    keywords:
+    - pushgateway
+    - prometheus
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: christian.staude@staffbase.com
+      name: cstaud
+    - email: rootsandtrees@posteo.de
+      name: zeritti
+    name: prometheus-pushgateway
+    sources:
+    - https://github.com/prometheus/pushgateway
+    type: application
+    urls:
+    - https://github.com/allanhung/prometheus-community-helm-charts/releases/download/prometheus-pushgateway-2.4.2/prometheus-pushgateway-2.4.2.tgz
+    version: 2.4.2
   - apiVersion: v1
     appVersion: 1.3.0
     created: "2020-12-18T15:37:36.964184634Z"
@@ -29373,4 +29494,4 @@ entries:
     urls:
     - https://prometheus-community.github.io/helm-charts/prometheus-to-sd-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-09T22:59:33.33755959Z"
+generated: "2023-11-11T17:14:50.973890198Z"
