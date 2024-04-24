@@ -1242,6 +1242,7 @@ kubeApiServer:
 kubelet:
   enabled: true
   namespace: kube-system
+  selector: ""
 
   serviceMonitor:
     ## Attach metadata to discovered targets. Requires Prometheus v2.45 for endpoints created by the operator.
